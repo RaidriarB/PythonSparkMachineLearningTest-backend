@@ -1,0 +1,85 @@
+[INFO] Test Error = 0.0016622514934017364                                       
+[INFO] Learned classification forest model:
+TreeEnsembleModel classifier with 3 trees
+
+  Tree 0:
+    If (feature 64 <= 837.5)
+     If (feature 22 <= 1.5)
+      If (feature 38 <= 2635.050687)
+       Predict: 0.0
+      Else (feature 38 > 2635.050687)
+       Predict: 4.0
+     Else (feature 22 > 1.5)
+      If (feature 36 <= 52.0)
+       Predict: 0.0
+      Else (feature 36 > 52.0)
+       Predict: 9.0
+    Else (feature 64 > 837.5)
+     If (feature 4 <= 5.5)
+      If (feature 56 <= 186.8)
+       Predict: 0.0
+      Else (feature 56 > 186.8)
+       If (feature 64 <= 994.0)
+        Predict: 0.0
+       Else (feature 64 > 994.0)
+        Predict: 9.0
+     Else (feature 4 > 5.5)
+      If (feature 68 <= 215.0)
+       Predict: 0.0
+      Else (feature 68 > 215.0)
+       If (feature 26 <= 215.5)
+        Predict: 0.0
+       Else (feature 26 > 215.5)
+        Predict: 9.0
+  Tree 1:
+    If (feature 4 <= 3.5)
+     If (feature 4 <= 1.5)
+      If (feature 20 <= 322.5)
+       If (feature 0 <= 21.5)
+        Predict: 4.0
+       Else (feature 0 > 21.5)
+        Predict: 0.0
+      Else (feature 20 > 322.5)
+       Predict: 0.0
+     Else (feature 4 > 1.5)
+      If (feature 20 <= 3629696.5)
+       If (feature 64 <= 837.5)
+        Predict: 9.0
+       Else (feature 64 > 837.5)
+        Predict: 0.0
+      Else (feature 20 > 3629696.5)
+       Predict: 0.0
+    Else (feature 4 > 3.5)
+     If (feature 64 <= 837.5)
+      If (feature 65 <= 5.5)
+       If (feature 66 <= 283.5)
+        Predict: 0.0
+       Else (feature 66 > 283.5)
+        Predict: 9.0
+      Else (feature 65 > 5.5)
+       Predict: 0.0
+     Else (feature 64 > 837.5)
+      If (feature 0 <= 16425.0)
+       If (feature 36 <= 376.0)
+        Predict: 9.0
+       Else (feature 36 > 376.0)
+        Predict: 0.0
+      Else (feature 0 > 16425.0)
+       Predict: 0.0
+  Tree 2:
+    If (feature 11 <= 399.92843170000003)
+     If (feature 36 <= 52.0)
+      If (feature 70 <= 36.0)
+       Predict: 0.0
+      Else (feature 70 > 36.0)
+       Predict: 4.0
+     Else (feature 36 > 52.0)
+      If (feature 5 <= 5.5)
+       If (feature 0 <= 16425.0)
+        Predict: 9.0
+       Else (feature 0 > 16425.0)
+        Predict: 0.0
+      Else (feature 5 > 5.5)
+       Predict: 0.0
+    Else (feature 11 > 399.92843170000003)
+     Predict: 0.0

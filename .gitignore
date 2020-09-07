@@ -1,0 +1,5 @@
+/dataset/
+/model/
+*.DS_Store
+*.csv
+*.libsvm

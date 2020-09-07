@@ -1,85 +1,113 @@
-[INFO] Test Error = 0.0016622514934017364                                       
+INFO] Test Error = 0.08500161160639967                                         
 [INFO] Learned classification forest model:
 TreeEnsembleModel classifier with 3 trees
 
   Tree 0:
-    If (feature 64 <= 837.5)
-     If (feature 22 <= 1.5)
-      If (feature 38 <= 2635.050687)
-       Predict: 0.0
-      Else (feature 38 > 2635.050687)
-       Predict: 4.0
-     Else (feature 22 > 1.5)
-      If (feature 36 <= 52.0)
-       Predict: 0.0
-      Else (feature 36 > 52.0)
-       Predict: 9.0
-    Else (feature 64 > 837.5)
-     If (feature 4 <= 5.5)
-      If (feature 56 <= 186.8)
-       Predict: 0.0
-      Else (feature 56 > 186.8)
-       If (feature 64 <= 994.0)
+    If (feature 16 <= 0.00528151805)
+     If (feature 0 <= 90.0)
+      If (feature 70 <= 30.0)
+       If (feature 38 <= 30.0592731868)
         Predict: 0.0
-       Else (feature 64 > 994.0)
+       Else (feature 38 > 30.0592731868)
+        Predict: 5.0
+      Else (feature 70 > 30.0)
+       If (feature 4 <= 1.5)
+        Predict: 3.0
+       Else (feature 4 > 1.5)
         Predict: 9.0
-     Else (feature 4 > 5.5)
-      If (feature 68 <= 215.0)
+     Else (feature 0 > 90.0)
+      Predict: 0.0
+    Else (feature 16 > 0.00528151805)
+     If (feature 65 <= 19.5)
+      If (feature 56 <= 233.60833335)
        Predict: 0.0
-      Else (feature 68 > 215.0)
-       If (feature 26 <= 215.5)
+      Else (feature 56 > 233.60833335)
+       If (feature 42 <= 169.15625)
+        Predict: 5.0
+       Else (feature 42 > 169.15625)
         Predict: 0.0
-       Else (feature 26 > 215.5)
-        Predict: 9.0
+     Else (feature 65 > 19.5)
+      If (feature 20 <= 269220.5)
+       If (feature 69 <= 15.5)
+        Predict: 0.0
+       Else (feature 69 > 15.5)
+        Predict: 11.0
+      Else (feature 20 > 269220.5)
+       Predict: 0.0
   Tree 1:
-    If (feature 4 <= 3.5)
-     If (feature 4 <= 1.5)
-      If (feature 20 <= 322.5)
-       If (feature 0 <= 21.5)
-        Predict: 4.0
-       Else (feature 0 > 21.5)
-        Predict: 0.0
-      Else (feature 20 > 322.5)
+    If (feature 70 <= 30.0)
+     If (feature 41 <= 0.5)
+      If (feature 67 <= 32141.5)
        Predict: 0.0
-     Else (feature 4 > 1.5)
-      If (feature 20 <= 3629696.5)
-       If (feature 64 <= 837.5)
+      Else (feature 67 > 32141.5)
+       If (feature 38 <= 30.0592731868)
+        Predict: 0.0
+       Else (feature 38 > 30.0592731868)
+        Predict: 5.0
+     Else (feature 41 > 0.5)
+      Predict: 0.0
+    Else (feature 70 > 30.0)
+     If (feature 55 <= 186.2840909091)
+      If (feature 70 <= 34.0)
+       If (feature 68 <= 222.0)
         Predict: 9.0
-       Else (feature 64 > 837.5)
+       Else (feature 68 > 222.0)
+        Predict: 11.0
+      Else (feature 70 > 34.0)
+       If (feature 18 <= 82.41666666665)
+        Predict: 3.0
+       Else (feature 18 > 82.41666666665)
         Predict: 0.0
-      Else (feature 20 > 3629696.5)
-       Predict: 0.0
-    Else (feature 4 > 3.5)
-     If (feature 64 <= 837.5)
-      If (feature 65 <= 5.5)
-       If (feature 66 <= 283.5)
+     Else (feature 55 > 186.2840909091)
+      If (feature 8 <= 719.5)
+       If (feature 16 <= 712.50302782015)
+        Predict: 10.0
+       Else (feature 16 > 712.50302782015)
         Predict: 0.0
-       Else (feature 66 > 283.5)
-        Predict: 9.0
-      Else (feature 65 > 5.5)
-       Predict: 0.0
-     Else (feature 64 > 837.5)
-      If (feature 0 <= 16425.0)
-       If (feature 36 <= 376.0)
-        Predict: 9.0
-       Else (feature 36 > 376.0)
+      Else (feature 8 > 719.5)
+       If (feature 63 <= 10.5)
         Predict: 0.0
-      Else (feature 0 > 16425.0)
-       Predict: 0.0
+       Else (feature 63 > 10.5)
+        Predict: 10.0
   Tree 2:
-    If (feature 11 <= 399.92843170000003)
-     If (feature 36 <= 52.0)
-      If (feature 70 <= 36.0)
+    If (feature 70 <= 30.0)
+     If (feature 5 <= 0.5)
+      If (feature 26 <= 345.5)
        Predict: 0.0
-      Else (feature 70 > 36.0)
-       Predict: 4.0
-     Else (feature 36 > 52.0)
-      If (feature 5 <= 5.5)
-       If (feature 0 <= 16425.0)
-        Predict: 9.0
-       Else (feature 0 > 16425.0)
+      Else (feature 26 > 345.5)
+       If (feature 49 <= 0.5)
         Predict: 0.0
-      Else (feature 5 > 5.5)
+       Else (feature 49 > 0.5)
+        Predict: 5.0
+     Else (feature 5 > 0.5)
+      If (feature 29 <= 516.2687891942501)
+       If (feature 12 <= 859.5)
+        Predict: 0.0
+       Else (feature 12 > 859.5)
+        Predict: 5.0
+      Else (feature 29 > 516.2687891942501)
+       If (feature 27 <= 35430.0)
+        Predict: 5.0
+       Else (feature 27 > 35430.0)
+        Predict: 0.0
+    Else (feature 70 > 30.0)
+     If (feature 3 <= 645355.0)
+      If (feature 68 <= -0.5)
+       If (feature 67 <= 225.5)
+        Predict: 9.0
+       Else (feature 67 > 225.5)
+        Predict: 0.0
+      Else (feature 68 > -0.5)
+       If (feature 37 <= 22.0)
+        Predict: 3.0
+       Else (feature 37 > 22.0)
+        Predict: 11.0
+     Else (feature 3 > 645355.0)
+      If (feature 2 <= 1.518669407E9)
+       If (feature 17 <= 1.9744294685)
+        Predict: 10.0
+       Else (feature 17 > 1.9744294685)
+        Predict: 0.0
+      Else (feature 2 > 1.518669407E9)
        Predict: 0.0
-    Else (feature 11 > 399.92843170000003)
-     Predict: 0.0
+

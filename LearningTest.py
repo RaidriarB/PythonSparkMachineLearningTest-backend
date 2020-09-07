@@ -15,10 +15,11 @@ os.environ['PYSPARK_PYTHON']='/Library/Frameworks/Python.framework/Versions/3.7/
 global vars
 
 '''
-TEST_DATA_PATH = "./dataset/test"
+TEST_DATA_PATH = "./useful_dataset/clean"
 TEST_MODEL_PATH = "./model"
 NUM_OF_FUTURE = 80
 NUM_OF_CLASSES = 14
+NUM_OF_TREES = 3
 
 def train():
 	data = MLUtils.loadLibSVMFile(sc,TEST_DATA_PATH)
@@ -31,7 +32,7 @@ def train():
 	#  Note: Use larger numTrees in practice.
 	#  Setting featureSubsetStrategy="auto" lets the algorithm choose.
 	model = RandomForest.trainClassifier(trainingData, numClasses= NUM_OF_CLASSES, categoricalFeaturesInfo={},
-										 numTrees=3, featureSubsetStrategy="auto",
+										 numTrees=NUM_OF_TREES, featureSubsetStrategy="auto",
 										 impurity='gini', maxDepth=4, maxBins=32)
 
 	# Evaluate model on test instances and compute test error

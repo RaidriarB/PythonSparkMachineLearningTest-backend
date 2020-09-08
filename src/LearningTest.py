@@ -15,8 +15,8 @@ os.environ['PYSPARK_PYTHON']='/Library/Frameworks/Python.framework/Versions/3.7/
 global vars
 
 '''
-TEST_DATA_PATH = "./useful_dataset/clean"
-TEST_MODEL_PATH = "./model"
+TEST_DATA_PATH = "../dataset/useful_dataset/clean"
+TEST_MODEL_PATH = "../model"
 NUM_OF_FUTURE = 80
 NUM_OF_CLASSES = 14
 NUM_OF_TREES = 3
@@ -25,7 +25,7 @@ def train():
 	data = MLUtils.loadLibSVMFile(sc,TEST_DATA_PATH)
 	print("[INFO] load complete.")
 	# 划分训练集
-	(trainingData, testData) = data.randomSplit([0.8, 0.3])
+	(trainingData, testData) = data.randomSplit([0.8, 0.2])
 
 	# Train a RandomForest model.
 	#  Empty categoricalFeaturesInfo indicates all features are continuous.

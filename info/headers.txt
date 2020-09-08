@@ -1,0 +1,80 @@
+0 Dst Port
+1 Protocol
+2 Timestamp
+3 Flow Duration
+4 Tot Fwd Pkts
+5 Tot Bwd Pkts
+6 TotLen Fwd Pkts
+7 TotLen Bwd Pkts
+8 Fwd Pkt Len Max
+9 Fwd Pkt Len Min
+10 Fwd Pkt Len Mean
+11 Fwd Pkt Len Std
+12 Bwd Pkt Len Max
+13 Bwd Pkt Len Min
+14 Bwd Pkt Len Mean
+15 Bwd Pkt Len Std
+16 Flow Byts/s
+17 Flow Pkts/s
+18 Flow IAT Mean
+19 Flow IAT Std
+20 Flow IAT Max
+21 Flow IAT Min
+22 Fwd IAT Tot
+23 Fwd IAT Mean
+24 Fwd IAT Std
+25 Fwd IAT Max
+26 Fwd IAT Min
+27 Bwd IAT Tot
+28 Bwd IAT Mean
+29 Bwd IAT Std
+30 Bwd IAT Max
+31 Bwd IAT Min
+32 Fwd PSH Flags
+33 Bwd PSH Flags
+34 Fwd URG Flags
+35 Bwd URG Flags
+36 Fwd Header Len
+37 Bwd Header Len
+38 Fwd Pkts/s
+39 Bwd Pkts/s
+40 Pkt Len Min
+41 Pkt Len Max
+42 Pkt Len Mean
+43 Pkt Len Std
+44 Pkt Len Var
+45 FIN Flag Cnt
+46 SYN Flag Cnt
+47 RST Flag Cnt
+48 PSH Flag Cnt
+49 ACK Flag Cnt
+50 URG Flag Cnt
+51 CWE Flag Count
+52 ECE Flag Cnt
+53 Down/Up Ratio
+54 Pkt Size Avg
+55 Fwd Seg Size Avg
+56 Bwd Seg Size Avg
+57 Fwd Byts/b Avg
+58 Fwd Pkts/b Avg
+59 Fwd Blk Rate Avg
+60 Bwd Byts/b Avg
+61 Bwd Pkts/b Avg
+62 Bwd Blk Rate Avg
+63 Subflow Fwd Pkts
+64 Subflow Fwd Byts
+65 Subflow Bwd Pkts
+66 Subflow Bwd Byts
+67 Init Fwd Win Byts
+68 Init Bwd Win Byts
+69 Fwd Act Data Pkts
+70 Fwd Seg Size Min
+71 Active Mean
+72 Active Std
+73 Active Max
+74 Active Min
+75 Idle Mean
+76 Idle Std
+77 Idle Max
+78 Idle Min
+79 Label

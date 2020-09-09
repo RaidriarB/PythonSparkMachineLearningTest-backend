@@ -1,1 +1,4 @@
-{'Benign','Brute Force -Web', 'Benign', 'Bot', 'FTP-BruteForce', 'DoS attacks-SlowHTTPTest', 'DDOS attack-HOIC', 'DDOS attack-LOIC-UDP', 'Infilteration', 'DoS attacks-Slowloris', 'DoS attacks-Hulk', 'DoS attacks-GoldenEye', 'SSH-Bruteforce', 'Brute Force -XSS', 'SQL Injection'}
+{'Benign': 6112151, 'Infilteration': 161934, 'Bot': 286191, 'Brute Force -Web': 611, 'Brute Force -XSS': 230, 'SQL Injection': 87, 'DoS attacks-GoldenEye': 41508, 'DoS attacks-Slowloris': 10990, 'DDOS attack-LOIC-UDP': 1730, 'DDOS attack-HOIC': 686012, 'FTP-BruteForce': 193360, 'SSH-Bruteforce': 187589, 'DoS attacks-SlowHTTPTest': 139890, 'DoS attacks-Hulk': 461912}
+
+Benign 6112151
+Evil   2172044

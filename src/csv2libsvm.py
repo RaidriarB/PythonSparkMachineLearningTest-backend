@@ -29,13 +29,14 @@ def parse_label(label):
 	return str(labels[label])
 
 
-
 def construct_line( label, line ):
 	new_line = []
 
 	try:
-		if float( label ) == 0.0:
+		if float( label ) - 0 <= 0.1:
 			label = "0"
+		else:
+			label = "1"
 	except ValueError:
 		pass
 
@@ -45,7 +46,7 @@ def construct_line( label, line ):
 
 		# convert TimeString to TimeStamp
 		try:
-			if item == '' or float( item ) == 0.0:
+			if item == '' or float( item ) - 0 <= 0.00001:
 				continue
 		except ValueError:
 			import time

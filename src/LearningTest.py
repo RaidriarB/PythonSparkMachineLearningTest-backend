@@ -19,13 +19,14 @@ TEST_DATA_PATH = "../dataset/useful_dataset/clean"
 TEST_MODEL_PATH = "../model"
 NUM_OF_FUTURE = 80
 NUM_OF_CLASSES = 14
-NUM_OF_TREES = 3
-
+NUM_OF_TREES = 11 # 
+MAXDEPTH = 20 # 10-100
+MAXBINS = 32 ## 
 def train():
 	data = MLUtils.loadLibSVMFile(sc,TEST_DATA_PATH)
 	print("[INFO] load complete.")
 	# 划分训练集
-	(trainingData, testData) = data.randomSplit([0.8, 0.2])
+	(trainingData, testData) = data.randomSplit([0.7, 0.3])
 
 	# Train a RandomForest model.
 	#  Empty categoricalFeaturesInfo indicates all features are continuous.
@@ -33,7 +34,7 @@ def train():
 	#  Setting featureSubsetStrategy="auto" lets the algorithm choose.
 	model = RandomForest.trainClassifier(trainingData, numClasses= NUM_OF_CLASSES, categoricalFeaturesInfo={},
 										 numTrees=NUM_OF_TREES, featureSubsetStrategy="auto",
-										 impurity='gini', maxDepth=4, maxBins=32)
+										 impurity='gini', maxDepth=MAXDEPTH, maxBins = MAXBINS)
 
 	# Evaluate model on test instances and compute test error
 	predictions = model.predict(testData.map(lambda x: x.features))

@@ -1,7 +1,7 @@
 import csv
 import os
 
-walk_dir = "../dataset/full_datasets/cicids2018"
+walk_dir = "../dataset/full_dataset/cicids2018"
 lst =next(os.walk(walk_dir))[2]
 
 def read_csv(item):
@@ -29,10 +29,24 @@ def get_all_headers():
 			reader = csv.reader(open(os.path.join(walk_dir,k)))
 			for line in reader:
 				return line
-			
-with open("headers.txt",'w') as f:
-	l = get_all_headers()
-	index = 0
-	for item in l:
-		f.write(str(index)+" "+item+"\n")
-		index += 1
+'''
+获取每个标签的样本数量
+'''
+def get_label_num():
+	dic = {}
+	for k in lst:
+		if ".csv" in k:
+			print("processing : "+k)
+			reader = csv.reader(open(os.path.join(walk_dir,k)))
+			try:
+				for line in reader:
+					word = line[79]
+					if word not in dic:
+						dic[word] = 1
+					else:
+						dic[word] += 1
+			except:
+				print(k)
+	print(dic)
+
+get_label_num()

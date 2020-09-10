@@ -123,7 +123,7 @@ https://www.anquanke.com/post/id/207835
 
 将数据集的csv文件转为libsvm格式，方便读入模型。
 
-这里祛除了不合规则的数据行，并且将时间字符串转换为了时间戳格式。
+脚本去除了不合规则的数据行，并且将时间字符串转换为了时间戳格式。为了在有限数据集情况下提升模型精度，将不同攻击类型简化为单一的恶意标签。
 
 使用方法
 
@@ -134,7 +134,7 @@ python3 csv2libsvm.py input_file output_file 79
 
 ### analyse_dataset.py
 
-分析、提取数据集关键特征的脚本。
+用于分析、提取数据集关键特征的脚本。
 
 get_all_headers()用于提取所有字段名称
 
@@ -148,5 +148,19 @@ get_all_labels()用于统计所有标签字段的值
 
 ```bash
 python3 dataset_cleaning.py src_dir target_dir
+```
+
+### vis.py
+
+用于将生成的随机森林模型转换为json。这是可视化模型的第一步，接下来会通过D3.js和web应用进行呈现。
+
+转化后的json会放入`/vis/data`中，名称为`structure.json`，同时会生成原始模型的Debug String，同样在`/vis/data`中，名称为`debugString`
+
+用法
+
+```
+python3 vis.py MAX_DEPTH TREE_TO_CONVERT
+MAX_DEPTH：生成的树的最大深度，建议为5-8左右。如果深度过大会导致显示问题
+TREE_TO_CONVERT：希望生成的树的编号。随机森林模型包含多颗决策树，使用此参数选择你希望转换的树
 ```
 

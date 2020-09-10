@@ -1,6 +1,0 @@
-2020-09-08 18:43:15 DEBUG cic.cs.unb.ca.flow.ui.FlowMonitorPane    java.lang.UnsatisfiedLinkError: 'long com.slytechs.library.NativeLibrary.dlopen(java.lang.String)'
-2020-09-08 18:43:15 DEBUG cic.cs.unb.ca.flow.ui.FlowMonitorPane    java.lang.UnsatisfiedLinkError: 'long com.slytechs.library.NativeLibrary.dlopen(java.lang.String)'
-2020-09-08 18:43:26 DEBUG cic.cs.unb.ca.flow.ui.FlowMonitorPane    java.lang.UnsatisfiedLinkError: 'long com.slytechs.library.NativeLibrary.dlopen(java.lang.String)'
-2020-09-08 18:43:26 DEBUG cic.cs.unb.ca.flow.ui.FlowMonitorPane    java.lang.UnsatisfiedLinkError: 'long com.slytechs.library.NativeLibrary.dlopen(java.lang.String)'
-2020-09-08 18:43:57 DEBUG cic.cs.unb.ca.flow.ui.FlowOfflinePane    offline select input /Users/raidriarb/Desktop/大三小学期/pythonSparkTest/./test.pcap
-2020-09-08 18:44:00 DEBUG cic.cs.unb.ca.flow.ui.FlowOfflinePane    offline select output /Users/raidriarb/Desktop/大三小学期/pythonSparkTest/./logs

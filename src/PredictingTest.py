@@ -17,7 +17,7 @@ os.environ['PYSPARK_PYTHON']='/Library/Frameworks/Python.framework/Versions/3.7/
 global vars
 
 '''
-TEST_DATA_PATH = "../dataset/useful_dataset/test"
+INPUT_DATA_PATH = "../dataset/useful_dataset/test2"
 TEST_MODEL_PATH = "../model"
 TEST_PREDICT_PATH = "../predict"
 NUM_OF_FUTURE = 80
@@ -46,7 +46,7 @@ def tobin(num):
 
 def predict():
 
-	testData = MLUtils.loadLibSVMFile(sc,TEST_DATA_PATH)
+	testData = MLUtils.loadLibSVMFile(sc,INPUT_DATA_PATH)
 	print("[INFO] load complete.")
 
 	model = RandomForestModel.load(sc,TEST_MODEL_PATH)
@@ -77,5 +77,5 @@ def predict():
 
 
 if __name__ == "__main__":
-	sc = SparkContext(appName="PyRandomForestTest")
+	sc = SparkContext(appName="PyRandomForestPridictingTest")
 	predict()

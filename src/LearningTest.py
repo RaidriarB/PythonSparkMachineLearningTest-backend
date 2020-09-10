@@ -15,7 +15,7 @@ os.environ['PYSPARK_PYTHON']='/Library/Frameworks/Python.framework/Versions/3.7/
 global vars
 
 '''
-TEST_DATA_PATH = "../dataset/useful_dataset/clean"
+TEST_DATA_PATH = "../dataset/useful_dataset/test"
 TEST_MODEL_PATH = "../model"
 NUM_OF_FUTURE = 80
 NUM_OF_CLASSES = 14
@@ -26,6 +26,7 @@ def train():
 	data = MLUtils.loadLibSVMFile(sc,TEST_DATA_PATH)
 	print("[INFO] load complete.")
 	# 划分训练集
+	data = data.randomSplit([0.2,0.8])[0]
 	(trainingData, testData) = data.randomSplit([0.7, 0.3])
 
 	# Train a RandomForest model.
@@ -50,5 +51,5 @@ def train():
 	sameModel = RandomForestModel.load(sc,TEST_MODEL_PATH)
 
 if __name__ == "__main__":
-	sc = SparkContext(appName="PyRandomForestTest")
+	sc = SparkContext(appName="PyRandomForestLearningTest")
 	train()

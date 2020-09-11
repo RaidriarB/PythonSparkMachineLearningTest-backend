@@ -13,7 +13,7 @@ import json
 import os
 os.environ['PYSPARK_PYTHON']='/Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python'
 
-TEST_MODEL_PATH = "../model"
+TEST_MODEL_PATH = "../new_model"
 MAX_DEPTH = 7
 USE_TREE = 3
 
@@ -88,7 +88,7 @@ if __name__ == "__main__":
 	sc = SparkContext(appName="RandomForest2Json")
 	trees = RandomForestModel.load(sc,TEST_MODEL_PATH)
 	treeStr = trees.toDebugString()
-	with open("../vis/data/debugString.txt") as f:
+	with open("../vis/data/modelString",'w') as f:
 		f.write(treeStr)
 
 	tree2json(treeStr)

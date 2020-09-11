@@ -119,6 +119,21 @@ https://www.anquanke.com/post/id/207835
 
 ## 脚本功能
 
+全局变量说明
+
+```
+os.environ['PYSPARK_PYTHON'] 你的计算机上python路径
+TEST_DATA_PATH 用于训练模型的数据的位置
+TEST_MODEL_PATH 模型的存放位置
+NUM_OF_FUTURE 特征数量
+NUM_OF_CLASSES 分类数量
+NUM_OF_TREES 随机森林的决策树数量
+MAXDEPTH 随机森林的决策树最大递归层数
+MAXBINS 随机森林的决策树最大分支数量
+TEST_PREDICT_PATH 使用模型进行预测后结果存放位置
+INPUT_DATA_PATH 使用模型进行预测时输入的数据位置
+```
+
 ### csv2libsvm.py
 
 将数据集的csv文件转为libsvm格式，方便读入模型。
@@ -164,3 +179,6 @@ MAX_DEPTH：生成的树的最大深度，建议为5-8左右。如果深度过�
 TREE_TO_CONVERT：希望生成的树的编号。随机森林模型包含多颗决策树，使用此参数选择你希望转换的树
 ```
 
+### LearningTest.py
+
+用于训练模型的脚本

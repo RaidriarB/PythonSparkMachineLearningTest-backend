@@ -17,7 +17,7 @@ global vars
 '''
 TEST_DATA_PATH = "../dataset/useful_dataset/test"
 TEST_MODEL_PATH = "../model"
-NUM_OF_FUTURE = 80
+NUM_OF_FEATURE = 80
 NUM_OF_CLASSES = 14
 NUM_OF_TREES = 11 # 
 MAXDEPTH = 20 # 10-100

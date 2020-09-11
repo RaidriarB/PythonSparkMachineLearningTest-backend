@@ -10,7 +10,7 @@ lst = next(os.walk(walk_dir))[2]
 for k in lst:
 	if ".csv" in k:
 		old_name = k
-		new_name = k.split(".")[0]+".libsvm"
+		new_name = k+".libsvm"
 		cmd = "python3 csv2libsvm.py "+"./"+walk_dir+"/"+old_name+" ./"+new_dir+"/"+new_name+" 79"
 
 		print(cmd)

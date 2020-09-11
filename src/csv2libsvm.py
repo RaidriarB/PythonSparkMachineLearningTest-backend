@@ -36,7 +36,8 @@ def construct_line( label, line ):
 		if float( label ) - 0 <= 0.1:
 			label = "0"
 		else:
-			label = "1"
+			#label = "1"
+			pass
 	except ValueError:
 		pass
 
